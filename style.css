@@ -1,0 +1,358 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:400,400i,500");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600");*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-size: 12px;
+    font-family: 'Rubik', sans-serif;
+    
+}
+header{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(300deg,#FFC0CB,#FFC0CB,#fff);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+
+}
+header h2{
+    color: #fcb045;
+}
+header a{
+    text-decoration: none;
+}
+nav a{
+    color: #fff;
+    border-radius: 20px;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+.slider-kapsayici{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    flex-direction: column;
+}
+.slider-kapsayici h1{
+    margin-bottom: 30px;
+}
+.slider-tas{
+    width: 800px;
+    height: 400px;
+    border: 1px solid #333;
+    position: relative;
+    overflow: hidden;
+}
+.slider img{
+    width: 800px;
+    height: 400px;
+}
+.slider-tas ul{
+    list-style: none;
+    
+}
+.slider-tas ul li{
+    position: absolute;
+}
+.slider-tas ul li:nth-of-type(1){
+    left: 0px;
+}
+.slider-tas ul li:nth-of-type(2){
+    left: 805px;
+}
+.slider-tas ul li:nth-of-type(3){
+    left: 1610px;
+}
+.slider-tas ul li:nth-of-type(4){
+    left: 2415px;
+}
+.slider-tas ul li:nth-of-type(5){
+    left: 3220px;
+}
+
+.slider{
+    position: absolute;
+    left: 0px;
+    animation-name: slayt;
+    animation-duration: 35s;
+    animation-delay: 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+.slider:hover{
+    animation-play-state: paused;
+}
+@keyframes slayt{
+    0%{left: 0px;}
+    25%{left: -805px;}
+    50%{left: -1610px;}
+    75%{left: -2415px;}
+    100%{left: -3220px;}
+}
+.header-bootom{
+    width: 100%;
+    height: 520px;
+    background: linear-gradient(200deg,#FFC0CB,#FFC0CB,#fff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resim img{
+    width:500px;
+    height:300px;
+}
+.yazi{
+    color: #fff;
+    font-size: 20px;
+    margin-right: 50px;
+}
+.whatsapp{
+    position: fixed;
+    left: 93%;
+    top: 90%;
+    
+}
+.whatsapp img{
+    width:50px;
+    height:50px;
+}
+.fiyatlar{
+    width: 100%;
+    height: 600px;
+    /*background-color: #fcb045;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fiyat-items{
+    width: 350px;
+    height: 400px;
+    color: #fff;
+    background-color: #fff;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 1px solid #FFC0CB;
+    background: linear-gradient(300deg,#0000FF,#00FFFF);
+}
+.fiyat-items a{
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(300deg,#0000FF,#00FFFF);
+    padding: 10px 40px;
+    margin-top: 20px;
+}
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: #180e29;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    background: linear-gradient(300deg,#0000FF,#00FFFF);
+}
+footer img{
+    width: 50px;
+    height: 50px;
+}
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+/*Responsivelik*/
+@media(max-width:1200px){
+    header{
+        justify-content: center;
+        height: 40px;
+    }
+    nav{
+        display: none;
+    }
+    .header-bootom{
+        flex-direction: column ;
+    }
+    .yazi{
+        margin-top: 20px;
+        width: 400px;
+        height: 200px;
+    }
+    .resim img{
+        width: 400px;
+        height: 200px;
+    }
+    .slider-tas{
+        width: 500px;
+        height: 300px;
+    }
+    .slider img{
+        width: 500px;
+        height: 300px;
+    }
+    @keyframes slayt{
+        0%{left: 0px;}
+        25%{left: -505px;}
+        50%{left: -1010px;}
+        75%{left: -1515px;}
+        100%{left: -2020px;}
+    }
+    .slider-tas ul li:nth-of-type(1){
+        left: 0px;
+    }
+    .slider-tas ul li:nth-of-type(2){
+        left: 505px;
+    }
+    .slider-tas ul li:nth-of-type(3){
+        left: 1010px;
+    }
+    .slider-tas ul li:nth-of-type(4){
+        left: 1515px;
+    }
+    .slider-tas ul li:nth-of-type(5){
+        left: 2020px;
+    }
+    .slider-kapsayici{
+        height: 400px;
+    }
+    .whatsapp{
+        position: fixed;
+        left: 95%;
+        top: 90%;
+        
+    }
+    .whatsapp img{
+        width:40px;
+        height:40px;
+    }
+    .fiyatlar{
+        flex-direction: column;
+        height: 1500px;
+        justify-content: space-around;
+    }
+    .iletisim{
+        width: 350px;
+    }
+    footer{
+        height: 400px;
+        justify-content: space-around;
+    }
+    .social{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media(max-width:1000px){
+    .whatsapp{
+        position: fixed;
+        left: 91%;
+        top: 86%;
+        
+    }
+    .whatsapp img{
+        width:40px;
+        height:40px;
+    }
+}
+@media(max-width:800px){
+    .whatsapp{
+        position: fixed;
+        left: 91%;
+        top: 86%;
+        
+    }
+    .whatsapp img{
+        width:30px;
+        height:30px;
+    }
+    .slider-tas{
+        width: 300px;
+        height: 200px;
+    }
+    .slider img{
+        width: 300px;
+        height: 200px;
+    }
+    @keyframes slayt{
+        0%{left: 0px;}
+        25%{left: -305px;}
+        50%{left: -610px;}
+        75%{left: -915px;}
+        100%{left: -1220px;}
+    }
+    .slider-tas ul li:nth-of-type(1){
+        left: 0px;
+    }
+    .slider-tas ul li:nth-of-type(2){
+        left: 305px;
+    }
+    .slider-tas ul li:nth-of-type(3){
+        left: 610px;
+    }
+    .slider-tas ul li:nth-of-type(4){
+        left: 915px;
+    }
+    .slider-tas ul li:nth-of-type(5){
+        left: 1220px;
+    }
+    .slider-kapsayici h1{
+        font-size: 20px;
+    }
+    .slider-kapsayici{
+        height: 300px;
+    }
+    .yazi{
+        width: 300px;
+        height: 200px;
+    }
+    .resim img{
+        width: 300px;
+        height: 150px;
+    }
+    .fiyat-items{
+        width: 300px;
+        height: 400px;
+    }
+    footer{
+        height: 300px;
+        font-size: 15px;
+    }
+    footer img{
+        width: 35px;
+        height: 35px;
+    }
+    .fiyatlar{
+        height: 1200;
+    }
+}
+@media(max-width:800px){
+    .whatsapp{
+        position: fixed;
+        left: 92%;
+        top: 86%;
+        
+    }
+    .whatsapp img{
+        width:30px;
+        height:30px;
+    }
+    .fiyatlar{
+        height: 1200;
+    }
+}
+
